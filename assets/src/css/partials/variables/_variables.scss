@@ -1,0 +1,355 @@
+:root {
+	/*-------------------------------------------------
+	>> Variables for Spaces
+	-------------------------------------------------*/
+	@include spacing(--dfb_space_2, 2, 2);
+	@include spacing(--dfb_space_4, 4, 4);
+	@include spacing(--dfb_space_6, 6, 6);
+	@include spacing(--dfb_space_8, 8, 8);
+	@include spacing(--dfb_space_12, 12, 10);
+	@include spacing(--dfb_space_16, 16, 12);
+	@include spacing(--dfb_space_20, 20, 16);
+	@include spacing(--dfb_space_24, 24, 20);
+	@include spacing(--dfb_space_30, 30, 24);
+	@include spacing(--dfb_space_36, 36, 30);
+	@include spacing(--dfb_space_48, 48, 36);
+	@include spacing(--dfb_space_72, 72, 44);
+	@include spacing(--dfb_space_96, 96, 52);
+	@include spacing(--dfb_space_128, 128, 64);
+	@include spacing(--dfb_space_156, 156, 72);
+	@include spacing(--dfb_space_200, 200, 84);
+	@include spacing(--dfb_space_236, 236, 98);
+
+	/* -------------------------------------------------
+	>> Variables for Font Sizes
+	------------------------------------------------- */
+
+	@include font_size(--dfb_font_size_12, 12, 11);
+	@include font_size(--dfb_font_size_14, 14, 13);
+	@include font_size(--dfb_font_size_16, 16, 15);
+	@include font_size(--dfb_font_size_18, 18, 17);
+	@include font_size(--dfb_font_size_20, 20, 18);
+	@include font_size(--dfb_font_size_22, 22, 20);
+	@include font_size(--dfb_font_size_24, 24, 20);
+	@include font_size(--dfb_font_size_26, 26, 22);
+	@include font_size(--dfb_font_size_32, 32, 24);
+	@include font_size(--dfb_font_size_40, 40, 26);
+	@include font_size(--dfb_font_size_48, 48, 30);
+	@include font_size(--dfb_font_size_60, 60, 45);
+	@include font_size(--dfb_font_size_68, 68, 55);
+
+	/* -------------------------------------------------
+	>> Color variables
+	------------------------------------------------- */
+
+	/*
+	>> Base Colors
+	*/
+
+	// Theme Primary
+	--dfb_color_primary: #0f2923;
+	--dfb_color_on_primary: #ffffff;
+
+	// Theme Secondary
+	--dfb_color_secondary: #2a4741;
+	--dfb_color_secondary_2: #8af135;
+
+	// Theme Dark
+	--dfb_black: #000000;
+	--dfb_black_1: #14191f;
+	--dfb_black_2: #606364;
+
+	// Theme Light
+	--dfb_white: #ffffff;
+	--dfb_white_1: #f1f1f1;
+	--dfb_white_2: #f1e9e9;
+
+	// Theme Colors
+	--dfb_gray: #e0e0e0;
+	--dfb_gray_1: #e6e6e6;
+	--dfb_gray_2: #eee;
+
+	--dfb_blue: #0013ff;
+	--dfb_blue_1: #00a4eb;
+	--dfb_blue_2: #2ca8dd;
+
+	--dfb_navy: #091a17;
+	--dfb_navy_1: #15332e;
+	--dfb_navy_2: #2f655c;
+
+	--dfb_red: #ff0000;
+	--dfb_sea_green: #04c3b4;
+
+	--dfb_transparent: transparent;
+
+	// Text Variations
+	--dfb_regular_text: #14191f;
+	--dfb_dark_text: #14191f;
+	--dfb_white_text: #f7f7f7;
+	--dfb_light_text: #606364;
+
+	// fixed variable Colors
+
+	--dfb_success: #198754;
+	--dfb_info: #0dcaf0;
+	--dfb_warning: #ffc107;
+	--dfb_danger: #dc3545;
+	--dfb_light: #f8f9fa;
+	--dfb_dark: #212529;
+
+	--dfb_signal: #d14b3c;
+	--dfb_signal_bg: #fbede9;
+
+	--dfb_color_background: #ffffff;
+	--dfb_color_on_background: #14191f;
+
+	// Borders
+	--dfb_border: #30353c;
+	--dfb_border_1: #545454;
+	--dfb_border_2: #adadad;
+	--dfb_border_3: #e0e0e0;
+	--dfb_border_4: #14191f;
+
+	/* -------------------------------------------------
+	>> Base Colors
+	>> Base colors are used for essential elements
+	such as the logo, tables, links, blockquote,
+	default buttons styling and this should't conflict
+	with theme colors
+	------------------------------------------------- */
+
+	// text Colors
+	--dfb_body_color: var(--dfb_color_on_background);
+	--dfb_body_bg: var(--dfb_color_background);
+	--dfb_text_strong: var(--dfb_black);
+
+	--dfb_dark_text: var(--dfb_black);
+	--dfb_white_text: var(--dfb_white);
+
+	--dfb_highlight_color: var(--dfb_color_on_primary);
+	--dfb_highlight_bg: var(--dfb_color_primary);
+
+	--dfb_caption: var(--dfb_black_2);
+
+	// Headings
+
+	--dfb_heading_color: inherit;
+	--dfb_heading_link_color: var(--dfb_dark_text);
+	--dfb_heading_link_color_hover: var(--dfb_dark_text);
+
+	// link colors
+	--dfb_link_color: var(--dfb_color_primary);
+	--dfb_link_color_hover: var(--dfb_color_primary);
+	--dfb_link_border_color: var(--dfb_color_primary);
+	--dfb_link_border_color_hover: transparent;
+
+	// lists Colors
+	--dfb_list_ul_marker_color: var(--dfb_color_primary);
+	--dfb_list_ol_marker_color: var(--dfb_color_primary);
+	--dfb_list_marker_bgcolor: var(--dfb_border_4);
+
+	// Blockquote Colors
+	--dfb_blockquote_color: var(--dfb_regular_text);
+	--dfb_blockquote_border_color: var(--dfb_regular_text);
+	--dfb_quote_color: var(--dfb_regular_text);
+	--dfb_blockqoute_cite_color: var(--dfb_light_text);
+
+	// Tables Colors
+	--dfb_table_border_color: var(--dfb_border);
+	--dfb_table_head_border_color: var(--dfb_dark_text);
+	--dfb_table_foot_border_color: var(--dfb_dark_text);
+
+	// Formating
+	--dfb_strong_color: var(--dfb_regular_text);
+	--dfb_underline_border_color: var(--dfb_regular_text);
+	--dfb_abbr_border_color: var(--dfb_regular_text);
+	--dfb_delete_color: var(--dfb_danger);
+	--dfb_insert_color: var(--dfb_success);
+	--dfb_insert_border_color: var(--dfb_success);
+
+	// Code
+	--dfb_code_color: var(--dfb_white_text);
+	--dfb_code_bgcolor: var(--dfb_dark_text);
+	--dfb_pre_color: var(--dfb_white_text);
+	--dfb_pre_bgcolor: var(--dfb_dark_text);
+	--dfb_mark_bgcolor: var(--dfb_dark_text);
+	--dfb_mark_color: var(--dfb_white_text);
+
+	// Graphical elements
+	--dfb_hr_color: var(--dfb_border_2);
+
+	// Form Fields
+
+	--dfb_input_color: var(--dfb_regular_text);
+	--dfb_input_bg: var(--dfb_light_field_bg);
+	--dfb_input_border_color: var(--dfb_border);
+
+	--dfb_input_focus_color: var(--dfb_black);
+	--dfb_input_focus_bgcolor: var(--dfb_white);
+	--dfb_input_focus_border_color: var(--dfb_border_2);
+
+	--dfb_disabled_input_bgcolor: var(--dfb_field_bg);
+	--dfb_disabled_input_border_color: var(--dfb_border_1);
+
+	--dfb_placeholder_color: var(--dfb_light_text);
+	--dfb_range_track_bgcolor: var(--dfb_field_bg);
+	--dfb_range_thumb_bgcolor: var(--dfb_color_primary);
+	--dfb_color_field_border_color: var(--dfb_border);
+	--dfb_color_field_bgcolor: var(--dfb_field_bg);
+	--dfb_radio_color: var(--dfb_regular_text);
+	--dfb_radio_border_color: var(--dfb_border);
+	--dfb_radio_bgcolor: var(--dfb_field_bg);
+	--dfb_radio_after_bgcolor: var(--dfb_color_primary);
+	--dfb_checkbox_color: var(--dfb_regular_text);
+	--dfb_checkbox_border_color: var(--dfb_border);
+	--dfb_checkbox_bgcolor: var(--dfb_field_bg);
+	--dfb_checkbox_after_bgcolor: var(--dfb_color_primary);
+	--dfb_progress_bgcolor: var(--dfb_field_bg);
+	--dfb_progress_value_bgcolor: var(--dfb_color_primary);
+	--dfb_meter_bgcolor: var(--dfb_field_bg);
+	--dfb_meter_value_bgcolor: var(--dfb_color_primary);
+
+	// Button
+	--dfb_button_color: var(--dfb_white_text);
+	--dfb_button_bgcolor: var(--dfb_color_secondary);
+	--dfb_button_color_hover: var(--dfb_white_text);
+	--dfb_button_bgcolor_hover: var(--dfb_transparent);
+	--dfb_button_border_color: var(--dfb_color_secondary);
+	--dfb_button_border_color_hover: var(--dfb_color_secondary);
+
+	--dfb_reset_button_bgcolor: var(--dfb_button_bgcolor);
+	--dfb_reset_button_color: var(--dfb_white_text);
+
+	// Buttons layer
+	--dfb_theme_btn_color: var(--dfb_button_color);
+	--dfb_theme_btn_bgcolor: var(--dfb_button_bgcolor);
+	--dfb_theme_btn_color_hover: var(--dfb_color_secondary);
+	--dfb_theme_btn_bgcolor_hover: var(--dfb_button_bgcolor_hover);
+	--dfb_theme_btn_border_color: var(--dfb_button_border_color);
+	--dfb_theme_btn_border_color_hover: var(--dfb_button_border_color_hover);
+
+	// --dfb_wp_btn_color: var(--dfb_white_text);
+	// --dfb_wp_btn_bgcolor: var(--dfb_button_bg);
+
+	// --dfb_wp_outline_btn_color: var(--dfb_white_text);
+	// --dfb_wp_outline_btn_border_color: var(--dfb_dark_text);
+	// --dfb_wp_outline_btn_bgcolor: var(--dfb_dark_text);
+
+	// Date Picker
+	--dfb_datepicker_bg_color: var(--dfb_gray);
+	--dfb_datepicker_select_bgcolor: var(--dfb_white);
+	--dfb_datepicker_link_color: var(--dfb_color_secondary);
+	--dfb_datepicker_link_active_color: var(--dfb_color_primary);
+	--dfb_datepicker_calendar: var(--dfb_white_text);
+	--dfb_datepicker_th_bgcolor: var(--dfb_border_1);
+	--dfb_datepicker_even_tr_td_bgcolor: var(--dfb_border_1);
+	--dfb_datepicker_border_color: var(--dfb_border_1);
+	--dfb_datepicker_date_color: var(--dfb_dark_text);
+
+	// Errors & Confirmation
+	--dfb_valiation_error_bg_color: var(--dfb_danger_bg);
+	--dfb_valiation_message_color: var(--dfb_danger);
+	--dfb_error_field_border_color: var(--dfb_danger);
+	--dfb_valiation_error_color: var(--dfb_danger);
+	--dfb_confirmation_message_bgcolor: var(--dfb_success_bg);
+	--dfb_confirmation_message_color: var(--dfb_dark_text);
+	--dfb_confirmation_message_border_color: var(--dfb_danger);
+	--dfb_required_text_color: var(--dfb_danger);
+	--dfb_invalid_error_border_color: var(--dfb_danger);
+	--dfb_hubspot_error_label_color: var(--dfb_danger);
+	--dfb_hubspot_required_color: var(--dfb_danger);
+	--dfb_fileupload_rule_color: var(--dfb_light_text);
+	--dfb_error_menu_color: var(--dfb_dark_text);
+
+	// Accessibility
+	--dfb_acc_btn_color: var(--dfb_white_text);
+	--dfb_acc_btn_bgcolor: var(--dfb_button_bg);
+	--dfb_acc_btn_shadow: var(--dfb_danger);
+	--dfb_acc_outline: var(--dfb_black);
+
+	// Comments Box
+	--dfb_comments_reply_btn_bgcolor: var(--dfb_button_bg);
+	--dfb_comments_reply_btn_color: var(--dfb_white_text);
+	--dfb_comments_reply_btn_bgcolor_hover: var(--dfb_button_bg_hover);
+	--dfb_comments_reply_btn_color_hover: var(--dfb_white_text);
+	--dfb_comment_meta_color: var(--dfb_dark_text);
+	--dfb_comment_metadata_color: var(--dfb_light_text);
+	--dfb_comments_list_border_color: var(--dfb_border);
+	--dfb_widget_comments_meta_color: var(--dfb_light_text);
+
+	// Pagination
+	--dfb_pagination_bgcolor: var(--dfb_blue_1);
+	--dfb_pagination_color: var(--dfb_white);
+	--dfb_pagination_color_hover: var(--dfb_white);
+	--dfb_pagination_bgcolor_hover: var(--dfb_border_1);
+	--dfb_pagination_bgcolor_current: var(--dfb_border_1);
+	--dfb_pagination_color_current: var(--dfb_white);
+	--dfb_pagination_first_bgcolor: var(--dfb_border_1);
+	--dfb_pagination_first_color: var(--dfb_dark_text);
+	--dfb_pagination_border: var(--dfb_transparent);
+
+	// Widgets
+	--dfb_widget_latest_post_meta_color: var(--dfb_danger);
+	--dfb_widget_rss_feed_meta_color: var(--dfb_danger);
+	--dfb_widget_search_button_color: var(--dfb_pure_black);
+	--dfb_wp_table_block_stripe_bg_color: var(--dfb_gray);
+
+	// Breadcrumbs
+	--dfb_breadcrumb_color: var(--dfb_pure_black);
+	--dfb_breadcrumb_link_color: var(--dfb_pure_black);
+	--dfb_breadcrumb_border_color: transparent;
+	--dfb_breadcrumb_border_color_hover: var(--dfb_pure_black);
+	--dfb_breadcrumb_span_color: var(--dfb_pure_black);
+
+	// Header
+	--dfb_header_bgcolor: var(--dfb_color_primary);
+	--dfb_header_color: var(--dfb_white);
+	--dfb_header_color_hover: var(--dfb_white);
+	--dfb_header_bgcolor_sticky: var(--dfb_color_primary);
+	--dfb_header_nav_border_color: var(--dfb_white);
+
+	--dfb_header_submenu_bgcolor: var(--dfb_gray);
+	--dfb_header_submenu_color: var(--dfb_header_color);
+	--dfb_header_submenu_color_hover: var(--dfb_header_color_hover);
+
+	--dfb_header_mobile_color: var(--dfb_dark_text);
+	--dfb_header_mobile_submenu_color: var(--dfb_dark_text);
+
+	--dfb_nav_overlay_bgcolor: var(--dfb_white);
+	--dfb_mobile_nav_icon_bgcolor: var(--dfb_dark_text);
+	--dfb_abbr_border: var(--dfb_dark_text);
+
+	// Top Bar
+	--dfb_topbar_bgcolor: var(--dfb_color_secondary);
+	--dfb_topbar_color: var(--dfb_white);
+	--dfb_topbar_link_color: var(--dfb_white);
+
+	// Footer
+	--dfb_footer_bgcolor: var(--dfb_color_primary);
+	--dfb_footer_color: var(--dfb_white_text);
+
+	--dfb_footer_color_hover: var(--dfb_white_text);
+
+	--dfb_f_nav_color: var(--dfb_footer_color);
+	--dfb_f_nav_color_hover: var(--dfb_footer_color_hover);
+	--dfb_f_nav_border_color: var(--dfb_footer_color);
+	--dfb_f_nav_border_color_hover: var(--dfb_footer_color_hover);
+
+	--dfb_copyright_color: var(--dfb_white_text);
+	--dfb_legal_nav_color: var(--dfb_white_text);
+	--dfb_legal_nav_border_color: var(--dfb_white_text);
+	--dfb_legal_nav_border_color_hover: var(--dfb_white_text);
+	--dfb_legal_text_color: var(--dfb_white_text);
+
+	// Containers
+	--dfb_ctn_red: var(--dfb_red);
+	--dfb_ctn_black: var(--dfb_black);
+	--dfb_ctn_sea_green: var(--dfb_sea_green);
+
+	// style variations
+
+	--dfb_style_bg: #821212;
+	--dfb_style_text: #000000;
+	--dfb_style_link: #000000;
+	--dfb_style_button: #00a4eb;
+}
